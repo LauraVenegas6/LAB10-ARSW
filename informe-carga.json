@@ -1,0 +1,108 @@
+{
+  "testStartTime": "2026-04-24T14:34:21.740Z",
+  "requests": [
+    {
+      "requestNumber": 1,
+      "status": 200,
+      "statusText": "OK",
+      "responseTime": 7526,
+      "success": true,
+      "timestamp": "2026-04-24T14:34:21.744Z",
+      "error": null
+    },
+    {
+      "requestNumber": 2,
+      "status": 200,
+      "statusText": "OK",
+      "responseTime": 7396,
+      "success": true,
+      "timestamp": "2026-04-24T14:34:21.804Z",
+      "error": null
+    },
+    {
+      "requestNumber": 3,
+      "status": 200,
+      "statusText": "OK",
+      "responseTime": 7781,
+      "success": true,
+      "timestamp": "2026-04-24T14:34:21.808Z",
+      "error": null
+    },
+    {
+      "requestNumber": 4,
+      "status": 200,
+      "statusText": "OK",
+      "responseTime": 7231,
+      "success": true,
+      "timestamp": "2026-04-24T14:34:21.811Z",
+      "error": null
+    },
+    {
+      "requestNumber": 5,
+      "status": 200,
+      "statusText": "OK",
+      "responseTime": 7651,
+      "success": true,
+      "timestamp": "2026-04-24T14:34:21.812Z",
+      "error": null
+    },
+    {
+      "requestNumber": 6,
+      "status": 200,
+      "statusText": "OK",
+      "responseTime": 7545,
+      "success": true,
+      "timestamp": "2026-04-24T14:34:21.814Z",
+      "error": null
+    },
+    {
+      "requestNumber": 7,
+      "status": 200,
+      "statusText": "OK",
+      "responseTime": 7518,
+      "success": true,
+      "timestamp": "2026-04-24T14:34:21.816Z",
+      "error": null
+    },
+    {
+      "requestNumber": 8,
+      "status": 200,
+      "statusText": "OK",
+      "responseTime": 7405,
+      "success": true,
+      "timestamp": "2026-04-24T14:34:21.817Z",
+      "error": null
+    },
+    {
+      "requestNumber": 9,
+      "status": 200,
+      "statusText": "OK",
+      "responseTime": 7476,
+      "success": true,
+      "timestamp": "2026-04-24T14:34:21.819Z",
+      "error": null
+    },
+    {
+      "requestNumber": 10,
+      "status": 200,
+      "statusText": "OK",
+      "responseTime": 7163,
+      "success": true,
+      "timestamp": "2026-04-24T14:34:21.824Z",
+      "error": null
+    }
+  ],
+  "summary": {
+    "totalRequests": 10,
+    "successfulRequests": 10,
+    "failedRequests": 0,
+    "successRate": "100.00%",
+    "totalExecutionTime": "7847ms",
+    "minResponseTime": "7163ms",
+    "maxResponseTime": "7781ms",
+    "avgResponseTime": "7469.20ms",
+    "medianResponseTime": "7497.00ms"
+  },
+  "testEndTime": "2026-04-24T14:34:29.590Z",
+  "totalExecutionTime": 7847
+}

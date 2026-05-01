@@ -1,0 +1,351 @@
+{
+  "info": {
+    "_postman_id": "fibonacci-concurrent-test",
+    "name": "Fibonacci Concurrent Test",
+    "description": "Colección de pruebas para la Function App de Fibonacci con 10 peticiones concurrentes",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Fibonacci Request 1 (nth=1000000)",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test('Status code is 200', function () {",
+              "    pm.response.to.have.status(200);",
+              "});",
+              "",
+              "pm.test('Response has a body', function () {",
+              "    pm.response.to.not.be.empty;",
+              "});",
+              "",
+              "// Registrar el resultado",
+              "var timestamp = new Date().toISOString();",
+              "var result = {",
+              "    request: 'Request 1',",
+              "    nth: 1000000,",
+              "    status: pm.response.code,",
+              "    responseTime: pm.response.responseTime,",
+              "    timestamp: timestamp,",
+              "    bodyLength: pm.response.text().length",
+              "};",
+              "console.log(JSON.stringify(result));",
+              "",
+              "if (!pm.environment.get('results')) {",
+              "    pm.environment.set('results', []);",
+              "}",
+              "var results = JSON.parse(pm.environment.get('results') || '[]');",
+              "results.push(result);",
+              "pm.environment.set('results', JSON.stringify(results));"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/Fibonacci?nth=1000000",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "Fibonacci"],
+          "query": [
+            {
+              "key": "nth",
+              "value": "1000000"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Fibonacci Request 2 (nth=1000000)",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test('Status code is 200', function () {",
+              "    pm.response.to.have.status(200);",
+              "});",
+              "",
+              "var timestamp = new Date().toISOString();",
+              "var result = {",
+              "    request: 'Request 2',",
+              "    nth: 1000000,",
+              "    status: pm.response.code,",
+              "    responseTime: pm.response.responseTime,",
+              "    timestamp: timestamp,",
+              "    bodyLength: pm.response.text().length",
+              "};",
+              "console.log(JSON.stringify(result));"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/Fibonacci?nth=1000000",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "Fibonacci"],
+          "query": [
+            {
+              "key": "nth",
+              "value": "1000000"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Fibonacci Request 3 (nth=1000000)",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test('Status code is 200', function () {",
+              "    pm.response.to.have.status(200);",
+              "});"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/Fibonacci?nth=1000000",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "Fibonacci"],
+          "query": [
+            {
+              "key": "nth",
+              "value": "1000000"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Fibonacci Request 4 (nth=1000000)",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test('Status code is 200', function () {",
+              "    pm.response.to.have.status(200);",
+              "});"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/Fibonacci?nth=1000000",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "Fibonacci"],
+          "query": [
+            {
+              "key": "nth",
+              "value": "1000000"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Fibonacci Request 5 (nth=1000000)",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test('Status code is 200', function () {",
+              "    pm.response.to.have.status(200);",
+              "});"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/Fibonacci?nth=1000000",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "Fibonacci"],
+          "query": [
+            {
+              "key": "nth",
+              "value": "1000000"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Fibonacci Request 6 (nth=1000000)",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test('Status code is 200', function () {",
+              "    pm.response.to.have.status(200);",
+              "});"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/Fibonacci?nth=1000000",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "Fibonacci"],
+          "query": [
+            {
+              "key": "nth",
+              "value": "1000000"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Fibonacci Request 7 (nth=1000000)",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test('Status code is 200', function () {",
+              "    pm.response.to.have.status(200);",
+              "});"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/Fibonacci?nth=1000000",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "Fibonacci"],
+          "query": [
+            {
+              "key": "nth",
+              "value": "1000000"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Fibonacci Request 8 (nth=1000000)",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test('Status code is 200', function () {",
+              "    pm.response.to.have.status(200);",
+              "});"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/Fibonacci?nth=1000000",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "Fibonacci"],
+          "query": [
+            {
+              "key": "nth",
+              "value": "1000000"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Fibonacci Request 9 (nth=1000000)",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test('Status code is 200', function () {",
+              "    pm.response.to.have.status(200);",
+              "});"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/Fibonacci?nth=1000000",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "Fibonacci"],
+          "query": [
+            {
+              "key": "nth",
+              "value": "1000000"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Fibonacci Request 10 (nth=1000000)",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test('Status code is 200', function () {",
+              "    pm.response.to.have.status(200);",
+              "});"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/Fibonacci?nth=1000000",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "Fibonacci"],
+          "query": [
+            {
+              "key": "nth",
+              "value": "1000000"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "https://functionprojectfibonacci-fhf9czb7cxh8hxcc.canadacentral-01.azurewebsites.net",
+      "type": "string"
+    }
+  ]
+}

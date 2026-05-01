@@ -1,0 +1,236 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Informe de Prueba de Carga - Fibonacci</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .summary {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+        .summary-item {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 5px;
+            border-left: 4px solid #007bff;
+        }
+        .summary-item label {
+            font-weight: bold;
+            color: #555;
+        }
+        .summary-item value {
+            font-size: 18px;
+            color: #007bff;
+            display: block;
+            margin-top: 5px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #007bff;
+            color: white;
+        }
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+        .success {
+            color: #28a745;
+            font-weight: bold;
+        }
+        .failed {
+            color: #dc3545;
+            font-weight: bold;
+        }
+        .chart {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📊 Informe de Prueba de Carga</h1>
+        <h2>Función de Fibonacci en Azure</h2>
+
+        <div class="summary">
+            <div class="summary-item">
+                <label>Total de Peticiones</label>
+                <value>10</value>
+            </div>
+            <div class="summary-item">
+                <label>Peticiones Exitosas</label>
+                <value class="success">10</value>
+            </div>
+            <div class="summary-item">
+                <label>Peticiones Fallidas</label>
+                <value class="failed">0</value>
+            </div>
+            <div class="summary-item">
+                <label>Tasa de Éxito</label>
+                <value>100.00%</value>
+            </div>
+            <div class="summary-item">
+                <label>Tiempo Total de Ejecución</label>
+                <value>7847ms</value>
+            </div>
+            <div class="summary-item">
+                <label>Tiempo Promedio de Respuesta</label>
+                <value>7469.20ms</value>
+            </div>
+            <div class="summary-item">
+                <label>Tiempo Mínimo de Respuesta</label>
+                <value>7163ms</value>
+            </div>
+            <div class="summary-item">
+                <label>Tiempo Máximo de Respuesta</label>
+                <value>7781ms</value>
+            </div>
+        </div>
+
+        <h2>Detalles de Peticiones</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Timestamp</th>
+                    <th>Status</th>
+                    <th>Tiempo de Respuesta (ms)</th>
+                    <th>Tamaño de Respuesta (bytes)</th>
+                    <th>Resultado</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr>
+                    <td>1</td>
+                    <td>2026-04-24T14:34:21.744Z</td>
+                    <td>200</td>
+                    <td>7526</td>
+                    <td>undefined</td>
+                    <td><span class="success">✓ Exitosa</span></td>
+                </tr>
+                
+                <tr>
+                    <td>2</td>
+                    <td>2026-04-24T14:34:21.804Z</td>
+                    <td>200</td>
+                    <td>7396</td>
+                    <td>undefined</td>
+                    <td><span class="success">✓ Exitosa</span></td>
+                </tr>
+                
+                <tr>
+                    <td>3</td>
+                    <td>2026-04-24T14:34:21.808Z</td>
+                    <td>200</td>
+                    <td>7781</td>
+                    <td>undefined</td>
+                    <td><span class="success">✓ Exitosa</span></td>
+                </tr>
+                
+                <tr>
+                    <td>4</td>
+                    <td>2026-04-24T14:34:21.811Z</td>
+                    <td>200</td>
+                    <td>7231</td>
+                    <td>undefined</td>
+                    <td><span class="success">✓ Exitosa</span></td>
+                </tr>
+                
+                <tr>
+                    <td>5</td>
+                    <td>2026-04-24T14:34:21.812Z</td>
+                    <td>200</td>
+                    <td>7651</td>
+                    <td>undefined</td>
+                    <td><span class="success">✓ Exitosa</span></td>
+                </tr>
+                
+                <tr>
+                    <td>6</td>
+                    <td>2026-04-24T14:34:21.814Z</td>
+                    <td>200</td>
+                    <td>7545</td>
+                    <td>undefined</td>
+                    <td><span class="success">✓ Exitosa</span></td>
+                </tr>
+                
+                <tr>
+                    <td>7</td>
+                    <td>2026-04-24T14:34:21.816Z</td>
+                    <td>200</td>
+                    <td>7518</td>
+                    <td>undefined</td>
+                    <td><span class="success">✓ Exitosa</span></td>
+                </tr>
+                
+                <tr>
+                    <td>8</td>
+                    <td>2026-04-24T14:34:21.817Z</td>
+                    <td>200</td>
+                    <td>7405</td>
+                    <td>undefined</td>
+                    <td><span class="success">✓ Exitosa</span></td>
+                </tr>
+                
+                <tr>
+                    <td>9</td>
+                    <td>2026-04-24T14:34:21.819Z</td>
+                    <td>200</td>
+                    <td>7476</td>
+                    <td>undefined</td>
+                    <td><span class="success">✓ Exitosa</span></td>
+                </tr>
+                
+                <tr>
+                    <td>10</td>
+                    <td>2026-04-24T14:34:21.824Z</td>
+                    <td>200</td>
+                    <td>7163</td>
+                    <td>undefined</td>
+                    <td><span class="success">✓ Exitosa</span></td>
+                </tr>
+                
+            </tbody>
+        </table>
+
+        <div class="chart">
+            <h3>📈 Análisis de Resultados</h3>
+            <p><strong>Parámetro utilizado (nth):</strong> 1000000</p>
+            <p><strong>URL Base:</strong> https://functionprojectfibonacci-fhf9czb7cxh8hxcc.canadacentral-01.azurewebsites.net/api/Fibonacci</p>
+            <p><strong>Fecha de inicio:</strong> Fri Apr 24 2026 09:34:21 GMT-0500 (hora estándar de Colombia)</p>
+            <p><strong>Fecha de finalización:</strong> Fri Apr 24 2026 09:34:29 GMT-0500 (hora estándar de Colombia)</p>
+            <p><strong>Conclusión:</strong> Las peticiones concurrentes fueron procesadas correctamente por la Function App en Azure.
+            El sistema respondió a todas las peticiones dentro del tiempo esperado, demostrando capacidad de escalamiento.</p>
+        </div>
+    </div>
+</body>
+</html>
+  

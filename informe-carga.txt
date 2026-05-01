@@ -1,0 +1,98 @@
+
+╔════════════════════════════════════════════════════════════╗
+║        INFORME DE PRUEBA DE CARGA - FIBONACCI             ║
+╚════════════════════════════════════════════════════════════╝
+
+📊 RESUMEN DE RESULTADOS:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Total de peticiones: 10
+Peticiones exitosas: 10
+Peticiones fallidas: 0
+Tasa de éxito: 100.00%
+
+⏱️ TIEMPOS DE RESPUESTA:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Tiempo total de ejecución: 7847ms
+Tiempo mínimo de respuesta: 7163ms
+Tiempo máximo de respuesta: 7781ms
+Tiempo promedio de respuesta: 7469.20ms
+Tiempo mediano de respuesta: 7497.00ms
+
+📝 DETALLES DE CADA PETICIÓN:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+1. Petición #1
+   Estado: 200 OK
+   Tiempo de respuesta: 7526ms
+   Tamaño de respuesta: undefined bytes
+   Resultado: ✓ Exitosa
+   Timestamp: 2026-04-24T14:34:21.744Z
+
+2. Petición #2
+   Estado: 200 OK
+   Tiempo de respuesta: 7396ms
+   Tamaño de respuesta: undefined bytes
+   Resultado: ✓ Exitosa
+   Timestamp: 2026-04-24T14:34:21.804Z
+
+3. Petición #3
+   Estado: 200 OK
+   Tiempo de respuesta: 7781ms
+   Tamaño de respuesta: undefined bytes
+   Resultado: ✓ Exitosa
+   Timestamp: 2026-04-24T14:34:21.808Z
+
+4. Petición #4
+   Estado: 200 OK
+   Tiempo de respuesta: 7231ms
+   Tamaño de respuesta: undefined bytes
+   Resultado: ✓ Exitosa
+   Timestamp: 2026-04-24T14:34:21.811Z
+
+5. Petición #5
+   Estado: 200 OK
+   Tiempo de respuesta: 7651ms
+   Tamaño de respuesta: undefined bytes
+   Resultado: ✓ Exitosa
+   Timestamp: 2026-04-24T14:34:21.812Z
+
+6. Petición #6
+   Estado: 200 OK
+   Tiempo de respuesta: 7545ms
+   Tamaño de respuesta: undefined bytes
+   Resultado: ✓ Exitosa
+   Timestamp: 2026-04-24T14:34:21.814Z
+
+7. Petición #7
+   Estado: 200 OK
+   Tiempo de respuesta: 7518ms
+   Tamaño de respuesta: undefined bytes
+   Resultado: ✓ Exitosa
+   Timestamp: 2026-04-24T14:34:21.816Z
+
+8. Petición #8
+   Estado: 200 OK
+   Tiempo de respuesta: 7405ms
+   Tamaño de respuesta: undefined bytes
+   Resultado: ✓ Exitosa
+   Timestamp: 2026-04-24T14:34:21.817Z
+
+9. Petición #9
+   Estado: 200 OK
+   Tiempo de respuesta: 7476ms
+   Tamaño de respuesta: undefined bytes
+   Resultado: ✓ Exitosa
+   Timestamp: 2026-04-24T14:34:21.819Z
+
+10. Petición #10
+   Estado: 200 OK
+   Tiempo de respuesta: 7163ms
+   Tamaño de respuesta: undefined bytes
+   Resultado: ✓ Exitosa
+   Timestamp: 2026-04-24T14:34:21.824Z
+
+✅ CONCLUSIÓN:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Las 10 peticiones concurrentes fueron procesadas correctamente por la
+Function App de Fibonacci en Azure. El sistema demostró capacidad de
+escalamiento y respondió a todas las peticiones dentro del tiempo esperado.
+Parámetro utilizado: nth=1000000
